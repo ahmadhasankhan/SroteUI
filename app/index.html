@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NewTheme</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/new-theme.css">
+  </head>
+  <body>
+    <script>
+      window.NewThemeENV = {{ENV}};
+      window.EmberENV = window.NewThemeENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/new-theme.js"></script>
+    <script>
+      window.NewTheme = require('new-theme/app')['default'].create(NewThemeENV.APP);
+    </script>
+  </body>
+</html>
