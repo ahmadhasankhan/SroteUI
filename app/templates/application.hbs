@@ -1,3 +1,130 @@
-<h2 id='title'>Welcome to Ember.js</h2>
 
-{{outlet}}
+<div class="modal show" id="model1">
+  <div class="modal-dialog" id="model2" style="margin:200px auto">
+    <div class="modal-content">
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal" {{action 'popupclose'}}><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+      	<div class="media">
+            <div class="pull-left" href="#">
+              <img class="media-object" src="construction2.png" alt="" style="width:100px;">
+            </div>
+            <div class="media-body" style="text-align:center;">
+              <div style="margin-left:5px;">
+                <h3 class="media-heading">Currently site is underconstruction </h3>
+                <h3 style="text-align:center;">Thanks for patience.</h3>
+              </div>
+            </div>
+          </div>
+
+
+      	<div >
+        <button type="button" class="btn btn-primary" style="margin-left:300px;"data-dismiss="modal" id="close" {{action 'popupclose'}}>Visit Page</button>
+        </div>
+      </div>
+      
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- body -->
+<div id="body">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img src="logo.jpg" class="navbar-brand" style="width:100px;height:50px;">
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="#">features</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+     
+        <button class="navbar-right btn-primary btn navbar-btn" data-toggle="modal" data-target=".bs-example-modal-sm">Login</button>
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- log in model -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <center>
+      	<br>
+      		<input type="text" class="form-control" name="userName" placeholder="Username">
+      	<br>
+      		<input type="text" class="form-control" name="paasWord" placeholder="Password">
+      	<p><a href="#">Sign up</a> now</p>
+      </center>
+
+		<div class="modal-footer">
+        	    <button type="button" class="btn btn-primary">Login</button>
+        	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      	</div>
+
+    </div>
+  </div>
+</div>
+
+  {{outlet}}
+<div class="navbar navbar-inverse"  style="padding-top:30px;">
+	<div>
+	<p style="font-size:1em;color:white;float:left;margin-left:60px;width:400px;"><img src="logo.jpg" style="width:50px;"> BigStore</p>
+	
+		<table class="table" style="width:700px;">
+		<tr style="color:white;">
+			<th>Overview</th>
+			<th>Point of Sale</th>
+			<th>Resources</th>
+			<th>Social</th>
+		</tr>
+		<tr>
+			<td><a href="#">Feature Tour</a></td>
+			<td><a href="#">POS System</a></td>
+			<td><a href="#">24/7 Support</a></td>
+			
+			
+			<td><a href="#">Facebook</a></td>
+		</tr>
+		<tr>
+			<td><a href="#">Sell Online</a></td>
+			<td><a href="#">Features</a></td>
+			<td><a href="#">Ecommerce Forums</a></td>
+			
+			<td><a href="#">LinkedIn</a></td>
+		</tr>
+		<tr>
+			
+			<td><a href="#">Online Store</a></td>
+			<td><a href="#">POS Software</a></td>
+			<td><a href="#">App Store</a></td>
+			
+			<td><a href="#">Google+</a></td>
+		</tr>
+		<tr>
+			
+			<td><a href="#">Store Design</a></td>
+			<td><a href="#">Hardware</a></td>
+			<td><a href="#">Theme Store</a></td>
+			<td></td>
+		</tr>
+  		</table>
+  		
+	</div>
+	<div>
+		<br/>
+		<h5 style="text-align:center;"><span class="label label-default">Copyright © 2014  Terms of Service </span></h5>
+	</div>		
+</div>
+  
+
+</div>
+<!-- footer -->

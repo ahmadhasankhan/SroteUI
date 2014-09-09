@@ -1,3 +1,47 @@
 html, body {
-  margin: 20px;
+}
+#header{
+	text-align:right;
+}
+#header p{
+	margin-bottom:0px;
+}
+
+.nav-tabs > li > a.active{
+  color: #428bca;
+  background-color: #fff;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+#body1{
+	margin:5px;
+}
+.navbar{
+	margin-bottom:0px;
+}
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td{
+	border-top:none;
+}
+.row{
+	border-style:solid;
+	border-color:black;
+	height:100px;
+	width:900px;
+}
+.style1{
+	border-style:solid;
+	width:800px; 
+	height:100px;
+	left:-20px;
+	box-shadow: 6px 6px 6px black;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+.style2{
+	padding:40px;
+	margin-left:100px;
+	width:990px;
 }
